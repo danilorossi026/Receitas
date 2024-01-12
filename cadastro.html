@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário de Cadastro</title>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="formato.css">
+
+    <!-- jQuery e Bootstrap JS -->
+<!-- Bootstrap JS -->
+  
+ <!-- jQuery -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+ integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+ crossorigin="anonymous"></script>
+ 
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
+
+    </head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="receitas.html">Receitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro.html">Cadastro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <h1>Efetue seu Cadastro</h1>
+            <div class="col-md-6 mx-auto">
+                <form action="processar_formulario.php" method="post">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="nome">Nome:</label>
+                            <input type="text" class="form-control" id="nome" name="nome">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email">E-mail:</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="cep">CEP:</label>
+                            <input type="text" class="form-control" id="cep" name="cep">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="rua">Rua:</label>
+                            <input type="text" class="form-control" id="rua" name="rua">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="numero">N°:</label>
+                            <input type="text" class="form-control" id="numero" name="numero">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="complemento">Complemento:</label>
+                            <input type="text" class="form-control" id="complemento" name="complemento">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" class="form-control" id="cidade" name="cidade">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="estado">UF:</label>
+                            <input type="text" class="form-control" id="estado" name="estado">
+                        </div>
+                    </div>
+                    <div class="form-row form-submit-row">
+                        <div class="col-md-6">
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        </div>
+                    </div>
+                </form>               
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                &copy; Vovó Terezinha 2024
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+ 
+   
+</body>
+</html>

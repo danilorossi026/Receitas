@@ -1,0 +1,38 @@
+.receitas {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+	align-items: flex-start;
+    padding: 15px;
+	overflow-x: auto;
+}
+
+.receita {
+    background-color:  rgb(233, 231, 121);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.receita h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.receita-foto {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.area-principal {
+    margin-bottom: 15px;
+}
+
+.receita-modo-preparo {
+    margin-bottom: 15px;
+}
